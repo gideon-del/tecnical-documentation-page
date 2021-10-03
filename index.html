@@ -1,0 +1,190 @@
+<!-- 
+
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width" infinte-scale="1" /> 
+</head>
+
+<nav id="navbar">
+  <header>Javascript Documentation</header>
+  <ul>
+    <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+    <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+    <li><a href="#Variables" class="nav-link">Variables</a></li>
+  <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+    <li><a href="#Comments" class="nav-link">Comments</a></li>
+    <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>
+    <li><a href="#Functions" class="nav-link">Functions</a></li>
+  <li><a href="#Reference" class="nav-link">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+    <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation)</p>
+    <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+    <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+    <ul>
+      <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+      <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+      <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and application</li>
+    </ul>
+      </article>
+  </section>
+  <section class="main-section" id="Hello_World">
+    <header>Hello World</header>
+    <article>
+      <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
+      <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! isthe standard for introductory programming examples.)</p>
+      <ol>
+        <li>Go to your test site and create a new folder named scripts. Within the scripts folder, create a new file called main.js, and save it</li>
+        <li>Write this code in the main.js file:</li>
+        <code><ol>
+          <li>var first= 'Hello World!'</li>
+        <li>console.log(first)</li>
+          </ol></code>
+        <li>With this you have just written your first program in JavaScript</li>
+      </ol>
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables </header>
+    <article>
+      <p>
+        Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:
+      </p>
+      <code>
+      <ol> <li>let myVariable;</li>
+        </ol>
+      </code>
+      <p>After declaring a variable, you can give it a value:</p>
+      <code>
+        <ol>
+        myVariable=30;
+        </ol>
+      </code>
+    </article>
+    
+  </section>
+  <section class="main-section" id="Data_Types">
+    <header>Data Types</header>
+    <article>
+      <p>There are 5 most important data types in JS whiche are:</p>
+      <ol>
+        <li><strong>String:</strong> This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks. For example </br>
+      <code>let name="James"</code></li>
+    <li><strong>Number:</strong>This is a number. Numbers don't have quotes around them.Eg:</br>
+  
+    
+     </li>
+     <code>
+       <ol>
+    let mynumber=20;
+       </ol>
+      </code>
+     <li><strong>Boolean: </strong>This is a True/False value. The words true and false are special keywords that don't need quote marks.Eg:</br>
+
+     </li>
+<code>
+  <ol>
+    <li>let myVariable= true;</li>
+  </ol>
+</code>
+    <li><strong>Array: </strong>This is a structure that allows you to store multiple values in a single reference.Eg
+      
+</li>
+<code>
+  <ol>
+  let myVariable=[1,'Bob','Steve',10];
+  </ol>
+</code>
+    <li><strong>Object: </strong>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn.Eg:<br/>
+      
+        
+      </li>
+      <code>
+        <ol>
+         <li>let myVariable = document.querySelector('h1');</li>
+        </ol>
+      </code>
+    </ol>
+    </article>
+  </section>
+<section class="main-section" id="Comments">
+  <header>Comments</header>
+  <article>
+    <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+    <code>
+      <ol>
+        <li>/*</li>
+<li>Everything in between is a comment.</li>
+<li>*/</li>
+</ol>
+</code>
+    <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this<br/>
+      <code>
+        <ol>
+          <li>// This is a comment</li>
+        </ol>
+      </code>
+        
+      </p>
+    
+  </article>
+</section>
+<section class="main-section" id="Conditionals">
+  <header>Conditionals</header>
+  <article>
+    <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if ... else statement. For example:</br>
+  <code>
+    <ol>
+      <li>let iceCream = 'chocolate';</li>
+      <li>if(iceCream === 'chocolate') {</li>
+      <li>alert('Yay, I love chocolate ice cream!');</li>
+      <li>} else {</li>
+      <li>alert('Awwww, but chocolate is my</br> favorite...');</li>
+      <li>}</li>
+    </ol>
+</code>
+   <br/>
+The expression inside the if( ... ) is the test. This uses the identity operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.
+  </p></article>
+</section>
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <article>
+      <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions previously. For example:<br/>
+        <code>let myVariable = document.querySelector('h1');</code><br>
+        <code>alert('hello!');</code><br/>
+        These functions, document.querySelector and alert, are built into the browser.<br/>
+        If you see something which looks like a variable name, but it's followed by parentheses— () —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.<br/>
+        For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.<br/>
+        You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:<br/>
+        <code>function multiply(num1,num2) {</br>
+        let result = num1 * num2;</br>
+    return result;</br>
+}</br>
+</code>
+Try running this in the console; then test with several arguments. For example:</br>
+<code>multiply(4, 7);<br/>
+  multiply(20, 20);</br>
+multiply(0.5, 3);</code></br>
+</p>
+    </article>
+  </section>
+<section id="Reference" class="main-section">
+  <header>Reference</header>
+  <p>All the DOcumentation is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN</a></p>
+</section>
+  
+</main>
